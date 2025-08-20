@@ -1,0 +1,32 @@
+# ASI-Arch Meta Repository Code Owners
+
+# Global ownership - all files require approval from maintainers
+* @adrianlerer
+
+# Core interfaces and architecture
+/src/interfaces/ @adrianlerer
+/meta/evolution/ @adrianlerer
+
+# Adapters require adapter maintainer + core maintainer approval
+/meta/adapters/ @adrianlerer
+
+# Security-sensitive files require security review
+SECURITY.md @adrianlerer
+/.github/workflows/ @adrianlerer
+/scripts/ @adrianlerer
+
+# Documentation requires maintainer approval
+/docs/ @adrianlerer
+README.md @adrianlerer
+CONTRIBUTING.md @adrianlerer
+META_AGREEMENTS.md @adrianlerer
+
+# Package and dependency management
+package.json @adrianlerer
+package-lock.json @adrianlerer
+tsconfig.json @adrianlerer
+
+# Configuration files
+.eslintrc.* @adrianlerer
+.prettierrc.* @adrianlerer
+jest.config.* @adrianlerer

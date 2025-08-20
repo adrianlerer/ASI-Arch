@@ -1,0 +1,68 @@
+{
+  "name": "@asi-arch/meta",
+  "version": "0.1.0",
+  "description": "Meta-agent control center for ASI Architecture ecosystem",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "dev": "ts-node src/index.ts",
+    "init": "node scripts/init-ecosystem.js",
+    "evolve": "node scripts/evolution-loop.js",
+    "monitor": "node scripts/monitor-ecosystem.js",
+    "sync:registry": "node scripts/sync-registry.js",
+    "eval:agents": "node scripts/evaluate-agents.js",
+    "docs": "typedoc src --out docs/api"
+  },
+  "keywords": [
+    "asi-arch",
+    "meta-agent",
+    "evolutionary-ai",
+    "oak-architecture",
+    "agent-orchestration"
+  ],
+  "author": "Adrian Lerer",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "axios": "^1.6.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.0",
+    "express": "^4.18.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.0",
+    "mongodb": "^6.0.0",
+    "octokit": "^3.0.0",
+    "winston": "^3.10.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/jest": "^29.5.0",
+    "@types/js-yaml": "^4.0.0",
+    "@types/lodash": "^4.14.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "jest": "^29.6.0",
+    "nodemon": "^3.0.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typedoc": "^0.24.0",
+    "typescript": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrianlerer/asi-arch-meta"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
